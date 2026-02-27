@@ -7,3 +7,11 @@ export interface Product {
   stock: number;
   price: number;
 }
+
+export interface Client {
+  id: string;
+  name: string;
+  email: string;
+  status: "active" | "lead" | "inactive";
+  lastContact: string;
+}

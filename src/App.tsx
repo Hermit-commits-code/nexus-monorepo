@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Shell } from "./components/layout/Shell";
 import { Heading } from "./components/ui/Heading";
+import { CRMManager } from "./features/crm/CRMManager";
 import { InventoryManager } from "./features/inventory/InventoryManager";
 import type { ModuleId } from "./types";
 
@@ -17,9 +18,7 @@ function App() {
       )}
       {activeModule === "inv" && <InventoryManager />}
       {/* Fallback for modules we haven't built yet */}
-      {(activeModule === "crm" || activeModule === "fin") && (
-        <Heading level={1}>Module Coming Soon</Heading>
-      )}
+      {activeModule === "crm" && <CRMManager />}
     </Shell>
   );
 }
