@@ -1,0 +1,44 @@
+.nexus-table{
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  margin-top: 1.5rem;
+
+  th{
+    background: #f8fafc;
+    text-align-last: left;
+    padding: 1rem;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #64748b;
+    border-bottom: 1px solid #e2e8f0;
+  }
+
+  td{
+    padding: 1rem;
+    border-bottom: 1px solid #f1f5f9;
+    font-size: 0.9375rem;
+    color: #1e293b;
+  }
+
+  tr:last-child td{
+    border-bottom: none;
+  }
+
+  tr:hover td{
+    background-color: #f8fafc;
+  }
+
+  code{
+    background: #f1f5f9;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-family: monospace;
+    color: var(--brand-primary);
+  }
+}
+

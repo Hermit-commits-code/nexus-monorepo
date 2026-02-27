@@ -1,0 +1,25 @@
+.nexus-input{
+  padding: 0.5rem 0.875rem;
+  font-size: 0.875rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  background-color: white;
+  color: #1e293b;
+  transition: all .2s ease;
+  width: 100%;
+  max-width: 300px;
+
+  &::placeholder{
+    color: #94a3b8;
+  }
+
+  &:focus{
+    outline: none;
+    border-color: var(--brand-primary);
+    box-shadow: 0 0 0 3px rgba(52,152,219,0.1);
+  }
+
+  &:hover{
+    border-color: #cbd5e1;
+  }
+}

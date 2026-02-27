@@ -1,0 +1,82 @@
+.nexus-shell{
+  display: grid;
+  grid-template-areas:
+    "nav nav"
+    "sidebar content"
+    "footer footer";
+  grid-template-columns: 240px 1fr;
+  grid-template-rows: 64px 1fr auto;
+  min-height: 100vh;
+}
+
+.nexus-nav{
+  grid-area: nav;
+  display: flex;
+  align-items: center;
+  padding: 0 1.5rem;
+  background: white;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.nexus-content{
+  grid-area: content;
+  padding: 2rem;
+}
+
+.nexus-footer{
+  grid-area: footer;
+  padding: 1rem 2rem;
+  background: white;
+  border-top: 1px solid #e2e8f0;
+  text-align: center;
+  font-size: 0.875rem;
+  color: #64748b;
+}
+.module-header{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+
+  .header-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .module-controls{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+  width: 100%;
+
+  .form-group{
+    display: flex;
+    gap: 0.5rem;
+    background:#f8fafc;
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    align-items: center;
+  }
+
+  .nexus-input.small{
+    max-width: 85px;
+  }
+}
+}
+
+
+
+// Mobile Responsiveness
+@media(max-width: 768px){
+  .nexus-shell{
+    grid-template-areas:
+      "nav"
+      "content"
+      "footer";
+    grid-template-columns: 1fr;
+  }
+}

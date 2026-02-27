@@ -1,0 +1,48 @@
+.nexus-sidebar{
+  grid-area: sidebar;
+  background: white;
+  border-right: 1px solid #e2e8f0;
+  padding: 1.5rem;
+
+  .sidebar-header{
+    margin-bottom: 2rem;
+    .badge{
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #64748b;
+      letter-spacing: .05em;
+    }
+  }
+
+  .module-list{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .module-btn{
+    width: 100%;
+    text-align-last: left;
+    padding: 0.75rem 1rem;
+    border: none;
+    background: transparent;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .2s;
+
+    &:hover{
+      background: #f1f5f9;
+      color: var(--brand-primary);
+    }
+
+    &.is-active{
+      background:#eff6ff;
+      color: var(--brand-primary);
+      border-left: 3px solid var(--brand-primary);
+      border-radius: 0 6px 6px 0;
+    }
+  }
+}

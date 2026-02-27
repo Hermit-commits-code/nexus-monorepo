@@ -1,0 +1,14 @@
+// These are the Raw values
+$blue-500: #3498db;
+$white:#fff;
+$slate-900:#0f172a;
+
+// These are "Semantic" tokens
+// If the brand changes from blue to say purple, we only change it here.
+$theme:(
+  "brand":(
+    "primary": $blue-500,
+    "surface": $white,
+    "text": $slate-900
+  )
+)
